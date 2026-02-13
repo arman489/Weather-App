@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="input-container">
+            <input type="text" class="input-item" placeholder="search city Name">
+            <button class="search-icon">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </div>
+        <div class="weather-info " style="display: none;">
+            <div class="location-container">
+                <div class="name-city">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="city-name" >Bihar</h4>
+                </div>
+                
+                    <h5 class="date-item"> Fri/01/2026 </h5>
+                  
+             
+                
+            </div>
+            <div class="img-degree">
+                <img src="./assets//weather/clouds.svg" alt="" class="tem-img">
+                <div class="degree">
+                    <h1 class="tem-text" >30 °C</h1>
+                    <h4 class="condition-weather" >Cloud</h4>
+                </div>
+            </div>
+            <div class="humi-speed">
+                <div class="humidity">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div>
+                        <h5>Humidity</h5>
+                        <h6 class="hum-count">74%</h6>
+                    </div>
+                </div>
+                <div class="speed">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div>
+                        <h5>Wind Speed</h5>
+                        <h6 class="speed-km">4.12M/s</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forcast-container">
+                <!-- <div class="forcast-child">
+                    <h5>Aug 09</h5>
+                    <img src="assets/weather/drizzle.svg" alt="" class="forcast-img">
+                    <h5>20 C</h5>
+                </div>
+                <div class="forcast-child">
+                    <h5>Aug 09</h5>
+                    <img src="assets/weather/drizzle.svg" alt="" class="forcast-img">
+                    <h5>20 C</h5>
+                </div>
+                <div class="forcast-child">
+                    <h5>Aug 09</h5>
+                    <img src="assets/weather/drizzle.svg" alt="" class="forcast-img">
+                    <h5>20 C</h5>
+                </div>
+                <div class="forcast-child">
+                    <h5>Aug 09</h5>
+                    <img src="assets/weather/drizzle.svg" alt="" class="forcast-img">
+                    <h5>20 C</h5>
+                </div> -->
+            </div>
+        </div>
+
+        <section class="not-city section-msg">
+            <img class="msg-img" src="./assets/message/search-city.png" alt="">
+             <div class="not-text" >
+                <h1 class="text-child" >Search city</h1>
+                <h4 class="text-child" >Find the weather conditions of th city</h4>
+             </div>
+        </section>
+        <section class="not-found section-msg" style="display: none;" >
+            <img class="msg-img" src="./assets/message/not-found.png" alt="">
+             <div class="not-text" >
+                <h1 class="text-child" >Search city</h1>
+                <h4 class="text-child" >Find the weather conditions of th city</h4>
+             </div>
+        </section>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
