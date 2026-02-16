@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    
+
 
 }
-body{
+
+body {
     background: url('./assets/bg.jpg');
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
-body::before{
+
+body::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: rga(0,0,0,0.15);
+    background: rga(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
 }
+
 .main-container{
     width: 300px;
     height: 450px;
@@ -39,8 +39,6 @@ body::before{
     backdrop-filter: blur(100px);
     padding: 15px;
 }
-
-
 .input-container{
     margin-top: 10px;
     padding: 10px;
@@ -60,7 +58,6 @@ body::before{
     padding-right: 60px;
     background-color:rgba(80, 113, 141, 0.189);
 }
-
 .input-item::placeholder{
     color: rgba(255, 255, 255, 0.807);
 }
@@ -91,7 +88,6 @@ body::before{
 
     
 }
-
 .img-degree{
     margin-top:30px;
     display: flex;
@@ -104,7 +100,6 @@ body::before{
     height: 100px;
 
 }
-
 .humi-speed{
     display: flex;
     justify-content: space-around;
@@ -161,7 +156,6 @@ body::before{
    min-width: 60px;
    max-height: 40px;
 }
-
 .section-msg{
     display: flex;
     flex-direction: column;
@@ -179,4 +173,155 @@ body::before{
 }
 .text-child{
     font-weight: 500;
+}
+
+
+
+
+
+@media (max-width:600px) {
+    html body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .main-container {
+        width: 95%;
+        height: calc(80% - 30px);
+        z-index: 1;
+        border-radius: 10px;
+        background: linear-gradient(to top, rgb(0, 0, 0, 0.15), rgb(255, 255, 255, 0.15));
+        backdrop-filter: blur(100px);
+        border: 1px solid black;
+    }
+    .input-container {
+        width: 100%;
+    }
+
+    .input-item {
+        width: 100%;
+
+    }
+
+    .input-item::placeholder {
+        color: rgba(255, 255, 255, 0.807);
+    }
+
+    
+    .weather-info {
+        flex-direction: column;
+    }
+
+    .location-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        margin-top: 3vh;
+        
+    }
+
+    .name-city {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .img-degree {
+        margin: 30px 0px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tem-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .humi-speed {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0px;
+        
+
+    }
+
+    .humidity {
+        display: flex;
+        gap: 10px;
+    }
+    .speed {
+        display: flex;
+        gap: 5px;
+
+    }
+
+    .forcast-container {
+        margin: 10vw 0px;
+        display: flex;
+        gap: 10px;
+        overflow-x: scroll;
+    }
+
+    .forcast-container::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .forcast-container::-webkit-scrollbar-track {
+        background-color: rgba(86, 85, 85, 0.616);
+        border-radius: 99px;
+    }
+
+    .forcast-container::-webkit-scrollbar-thumb {
+        background-color: rgba(48, 47, 47, 0.592);
+        border-radius: 99px;
+
+    }
+
+    .forcast-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.163);
+        margin: 5px;
+        border-radius: 8px;
+        transition: 0.1s background linear
+    }
+
+    .forcast-child:hover {
+        background: rgba(255, 255, 255, 0.316);
+    }
+
+    .forcast-img {
+        min-width: 60px;
+        max-height: 40px;
+    }
+
+    .section-msg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .msg-img {
+        height: 180px;
+        width: fit-content;
+    }
+
+    .not-text {
+        text-align: center;
+    }
+
+    .text-child {
+        font-weight: 500;
+    }
 }

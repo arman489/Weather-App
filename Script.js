@@ -22,14 +22,14 @@ const foreCastContainer = document.querySelector('.forcast-container')
 const apiKey = '1589c867bd3972e2e5424e0a425e91b4'
 
 searchBtn.addEventListener('click', () => {
-    if (cityInput.value.trim() != '') {
+    if (cityInput.value.toLowerCase().trim() != '') {
         updateWeather(cityInput.value)
         cityInput.value = ''
         cityInput.blur()
     }
 })
 cityInput.addEventListener('keydown', (event) => {
-    if (event.key == 'Enter' && cityInput.value.trim() != '') {
+    if (event.key == 'Enter' && cityInput.value.toLowerCase().trim() != '') {
         updateWeather(cityInput.value)
         cityInput.value = ''
         cityInput.blur()
